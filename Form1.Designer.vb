@@ -27,6 +27,7 @@ Partial Class Form1
         Me.BuyPacoca = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Labelpacoca = New System.Windows.Forms.Label()
+        Me.inflacao = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,11 +78,22 @@ Partial Class Form1
         Me.Labelpacoca.TabIndex = 4
         Me.Labelpacoca.Text = "pacoca"
         '
+        'inflacao
+        '
+        Me.inflacao.AutoSize = True
+        Me.inflacao.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.inflacao.Location = New System.Drawing.Point(9, 223)
+        Me.inflacao.Name = "inflacao"
+        Me.inflacao.Size = New System.Drawing.Size(55, 13)
+        Me.inflacao.TabIndex = 5
+        Me.inflacao.Text = "inflacao"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(403, 245)
+        Me.Controls.Add(Me.inflacao)
         Me.Controls.Add(Me.Labelpacoca)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BuyPacoca)
@@ -100,4 +112,5 @@ Partial Class Form1
     Friend WithEvents BuyPacoca As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Labelpacoca As Label
+    Friend WithEvents inflacao As Label
 End Class
